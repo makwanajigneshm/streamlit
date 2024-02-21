@@ -6,7 +6,7 @@ sl.text("Welcome to the party!")
 my_fruit_list=p.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw/fruit_macros.txt")
 #sl.dataframe(my_fruit_list)
 my_fruit_list=my_fruit_list.set_index("Fruit")
-sl.multiselect("Pick some Fruits",list(my_fruit_list.index),"[Apple,Cantaloupe]")
+sl.multiselect("Pick some Fruits",list(my_fruit_list.index),"[Apple","Cantaloupe]")
 
 sl.dataframe(my_fruit_list)
 
